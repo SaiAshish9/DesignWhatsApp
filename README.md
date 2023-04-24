@@ -53,6 +53,10 @@ We can have a session microservices for storing the connections info.
 <img width="688" alt="Screenshot 2023-04-25 at 12 25 15 AM" src="https://user-images.githubusercontent.com/43849911/234089816-8503a9c1-0191-4596-ac86-70f6f619fe11.png">
 
 ```
+Session microservice will have that information via a DB or cache storage. 
+Hence, single point of Failure is covered here.
+
+Gateway will simply send the message from user and the metadata to the session service.
 
 
 ```
