@@ -95,7 +95,21 @@ Gateways can be used to update the "received" and "sent" statuses.
  
 Second feature is the last seen or is the person online right now.
 
-Lets say A wants to know when B was online the last time.
+Lets say B wants to know when A was online the last time.
+
+Whenever A does something, last seen timestamp needs to be updated.
+
+We can have a lastSeen microservice which will do the user activity tracking.
+
+When they send a message to the gateway, lastSeen will be updated.
+
+Two types of messages client will be sending via gateway. One of those two is
+User Activity messages and second one is app messages. And accordingly microservice
+will update the db.
+```
+
+```
+
 ```
 
 ```
