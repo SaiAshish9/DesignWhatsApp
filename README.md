@@ -129,7 +129,38 @@ many mapping.
 
 And to lot of duplication in the mappings we've, we can make use of consistent hashing.
 
-It helps to reduce memory split across servers 
+It helps to reduce memory split across servers and allows to route request to the right box
+based on the group id. If we've requests routed on the group id, we can easily identify the users
+of that group.
+
+That takes care of the routing mechanism we've.
+
+In case the group service fails, like we send the message to the box and it faile, we can retry.
+
+We can only retry if we know what request needs to be sent next.
+
+One of the mechanisms for this is the message queue.
+
+Once we give message to the message queue, it ensures that the message will be sent.
+May be now, 10s later or 15s later. Those are configurable options and also how many times
+we are going to retry , all of these are configurable in the message queue.
+
+If the message queue fails even after 5 retries , it can tell that it's failed and notification
+will be sent all the way to the client.
+
+Group receipts will be expensive as everyone needs to view the message.
+
+For Group / Chat Messaging we need :
+1. Idempotency
+2. Retrial
+3. Ordering
+
+Facebook messenger de-priortizes the un-important messages incase there's a huge event
+to keep the system health good.
+
+Things like last seen can be ignored during diwali because of the load. RateLimiting
+principles comes into play here.
+
 ```
 
 ```
