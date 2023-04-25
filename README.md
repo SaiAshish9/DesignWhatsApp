@@ -108,8 +108,24 @@ User Activity messages and second one is app messages. And accordingly microserv
 will update the db.
 ```
 
-```
+<img width="1280" alt="Screenshot 2023-04-25 at 11 13 08 PM" src="https://user-images.githubusercontent.com/43849911/234358832-5335c094-7302-4639-bec3-5b17ad17d3a8.png">
 
+
+```
+1. Group Messaging
+
+It will be really hard for the session service to handle the group messaging logic, that's why
+we can decouple information for who's existing in each group at the group service with the help of route id.
+
+There can be millions of messages getting delivered at each group, hence we need to limit the
+number of people at each group as it will be difficult to handle such load. (let's say 200).
+
+We can directly send the electronic message from the user application itself, there's no work
+needs to be done at the gateway. Message can later be parsed using a parser & unparser 
+microservice.
+
+There can be group id to user id mapping present at the group service level. And that will be a one to
+many mapping.
 ```
 
 ```
@@ -118,5 +134,3 @@ will update the db.
 https://www.youtube.com/watch?v=tndzLznxq40&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX&index=8
 
 ```
-
-<img width="1280" alt="Screenshot 2023-04-25 at 11 13 08 PM" src="https://user-images.githubusercontent.com/43849911/234358832-5335c094-7302-4639-bec3-5b17ad17d3a8.png">
