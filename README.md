@@ -57,6 +57,4 @@ Session microservice will have that information via a DB or cache storage.
 Hence, single point of Failure is covered here.
 
 Gateway will simply send the message from user and the metadata to the session service.
-
-
 ```
