@@ -118,3 +118,5 @@ will update the db.
 https://www.youtube.com/watch?v=tndzLznxq40&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX&index=8
 
 ```
+
+<img width="1280" alt="Screenshot 2023-04-25 at 11 13 08 PM" src="https://user-images.githubusercontent.com/43849911/234358832-5335c094-7302-4639-bec3-5b17ad17d3a8.png">
