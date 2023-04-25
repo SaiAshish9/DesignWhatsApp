@@ -126,6 +126,10 @@ microservice.
 
 There can be group id to user id mapping present at the group service level. And that will be a one to
 many mapping.
+
+And to lot of duplication in the mappings we've, we can make use of consistent hashing.
+
+It helps to reduce memory split across servers 
 ```
 
 ```
