@@ -1,5 +1,10 @@
 https://www.youtube.com/watch?v=vvhC64hQZMk
 
+https://www.enjoyalgorithms.com/blog/design-whatsapp
+
+https://bytebytego.com/courses/system-design-interview/design-a-chat-system
+
+https://www.theverge.com/2016/4/12/11415198/facebook-messenger-whatsapp-number-messages-vs-sms-f8-2016
 
 ```
 Key Features:
@@ -73,10 +78,29 @@ Once the message is sent, user A should be notified that the message has been de
 
 We can have another db for chat messages, once the message is delivered user A will be notified and sent mark 
 will appear with the help of gateway 1 and socket server.
-```
 
-```
-
+Gateways can be used to update the "received" and "sent" statuses.
 ```
 
 <img width="1085" alt="Screenshot 2023-04-25 at 10 16 35 PM" src="https://user-images.githubusercontent.com/43849911/234346530-aed3f8af-8e01-4f12-b965-ef61fb85abda.png">
+
+```
+
+```
+
+<img width="1064" alt="Screenshot 2023-04-25 at 10 33 36 PM" src="https://user-images.githubusercontent.com/43849911/234350397-095bed58-42a6-46ff-8e36-494c7032077e.png">
+
+```
+ 3. Online / Last Seen:
+ 
+Second feature is the last seen or is the person online right now.
+
+Lets say A wants to know when B was online the last time.
+```
+
+```
+4. Image / Video Sharing
+
+https://www.youtube.com/watch?v=tndzLznxq40&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX&index=8
+
+```
