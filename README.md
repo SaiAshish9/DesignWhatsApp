@@ -6,6 +6,10 @@ https://bytebytego.com/courses/system-design-interview/design-a-chat-system
 
 https://www.theverge.com/2016/4/12/11415198/facebook-messenger-whatsapp-number-messages-vs-sms-f8-2016
 
+MQs:
+
+https://www.youtube.com/watch?v=oUJbuFMyBDk&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX&index=5
+
 ```
 Key Features:
 
@@ -167,5 +171,4 @@ principles comes into play here.
 4. Image / Video Sharing
 
 https://www.youtube.com/watch?v=tndzLznxq40&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX&index=8
-
 ```
