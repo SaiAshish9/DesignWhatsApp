@@ -57,4 +57,26 @@ Session microservice will have that information via a DB or cache storage.
 Hence, single point of Failure is covered here.
 
 Gateway will simply send the message from user and the metadata to the session service.
+
+In this way A can send the message to B.
 ```
+
+<img width="1061" alt="Screenshot 2023-04-25 at 10 09 52 PM" src="https://user-images.githubusercontent.com/43849911/234345026-fffa2241-05ae-4c1c-88da-57dbecd49a8d.png">
+
+```
+At every minute B can ask the gateway for new messages using long polling.
+
+We can implement this over TCP with the help of websockets (wss).
+They allow P2P communication, A can send to B and vice versa.
+
+Once the message is sent, user A should be notified that the message has been delivered.
+
+We can have another db for chat messages, once the message is delivered user A will be notified and sent mark 
+will appear with the help of gateway 1 and socket server.
+```
+
+```
+
+```
+
+<img width="1085" alt="Screenshot 2023-04-25 at 10 16 35 PM" src="https://user-images.githubusercontent.com/43849911/234346530-aed3f8af-8e01-4f12-b965-ef61fb85abda.png">
