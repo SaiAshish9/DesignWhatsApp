@@ -172,3 +172,5 @@ principles comes into play here.
 
 https://www.youtube.com/watch?v=tndzLznxq40&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX&index=8
 ```
+
+<img width="1061" alt="Screenshot 2023-04-26 at 11 46 38 PM" src="https://user-images.githubusercontent.com/43849911/234666704-5b570fc4-622c-449c-be0b-e5fef003c966.png">
